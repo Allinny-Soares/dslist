@@ -12,7 +12,7 @@ import jakarta.persistence.Table;
 //Anotetion Entity Configura a tabela java para que seja equivalente a uma tabela do banco relacional
 
 @Entity
-@Table(name = "tb-game")
+@Table(name = "tb_game")
 public class Game {
 	
 	//atributos de um game
@@ -27,11 +27,14 @@ public class Game {
 	private String platforms;
 	private Double score;
 	private String imgUrl;
+	
+	@Column(columnDefinition = "TEXT")
 	private String shortDescription;
+	@Column(columnDefinition = "TEXT")
 	private String longDescription;
 	
 	//construtor com argumentos para ter a possibilidade de instaciar o game ja passando argumentos
-	public game () {
+	public Game() {
 		
 	}
 
