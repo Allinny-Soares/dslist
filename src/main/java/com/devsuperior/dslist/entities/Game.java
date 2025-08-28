@@ -20,7 +20,7 @@ public class Game {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String title;
-	// customizar pois é palavra reservada no banco de dados
+	// customizar pois é palavra reservada no ba nco de dados
 	@Column(name = "game_year")
 	private Integer year;
 	private String genre;
